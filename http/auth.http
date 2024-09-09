@@ -1,0 +1,26 @@
+# Register User
+POST http://localhost:3000/api/v1/register
+Content-Type: application/json
+
+{
+    "name": "indrazulfi",
+    "email": "indrazulfi@devscale.id",
+    "password": "12345678"
+}
+
+### Login User
+POST http://localhost:3000/api/v1/login
+Content-Type: application/json
+
+{
+    "email": "indrazulfi@devscale.id",
+    "password": "12345678"
+}
+
+### Logout User
+POST http://localhost:3000/api/v1/logout
+Authorization: Bearer cm0v4gcli000432d3bfq9wmrk
+
+### Access Protected Endpoint
+GET http://localhost:3000/api/v1/protected
+Authorization: Bearer cm0v4gcli000432d3bfq9wmrk
